@@ -62,9 +62,8 @@ class CNUP:
         total = 0
         for order in self.orders:
             total += order.service.price
-        return f"Общая выручка: {total} грн"
+        return f"Спільна каса: {total} грн"
 
-# Пример использования
 system = (CNUP()
     .add_service(Service("Оформлення паспорту України", 1000))
     .add_service(Service("Оформлення загранпаспорту", 1500))
